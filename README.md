@@ -10,6 +10,8 @@ This project uses Evo-calendar and FullCalendar.io libraries to create a calenda
 4.  In order to add API key, save the ".env_sample" file as ".env" and replace "YOUR_API_KEY_HERE" with your API key 
 5.	Run on the browser:  http://localhost:7000/evo
 
+Here is a [Demo](https://my-calendar-of-events.herokuapp.com/evo)
+
 ## Files to refer to:
 1.	EJS: 	evo.ejs, full.ejs
 2.	JS:   	server.js 
@@ -22,4 +24,4 @@ This project uses Evo-calendar and FullCalendar.io libraries to create a calenda
   Node and Express
 •	https://freshman.tech/learn-node/
 
-## Here is a Demo [https://my-calendar-of-events.herokuapp.com/evo]
+
