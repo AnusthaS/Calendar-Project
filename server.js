@@ -19,7 +19,7 @@ const options = {
     url: url,
     headers: {
         "accept": "application/vnd.bizzabo.v2.0+json",
-        "authorization": process.env.API_KEY
+        "authorization": "Bearer " + process.env.API_KEY
     }
   };
  
