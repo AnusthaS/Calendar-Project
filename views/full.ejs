@@ -1,0 +1,36 @@
+
+
+<html>
+    <head>
+        <!-- JS Dependencies -->
+        <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script data-require="moment.js@*" data-semver="2.14.1" src="https://npmcdn.com/moment@2.14.1"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.0/fullcalendar.min.js"></script>
+        
+        <!-- CSS Styles for FullCalendar.io-->
+        <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.0/fullcalendar.min.css" />
+        
+        <script>
+            
+             $(document).ready(function() {
+            
+            //data for  fullcalendar 
+                const bizzdata = <%- JSON.stringify(bizzfull) %>;
+            for (var event of bizzdata) {
+                console.log(event);
+            }
+            
+            //fullcalendar
+            $('#calendar').fullCalendar({
+                    events: bizzdata
+                    });
+                });
+          </script>
+            
+    </head> 
+
+    <body>
+        <div id="calendar"></div>
+    </body>
+</html>

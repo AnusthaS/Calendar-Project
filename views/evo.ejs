@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <!-- JS Dependencies -->
+        <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script data-require="moment.js@*" data-semver="2.14.1" src="https://npmcdn.com/moment@2.14.1"></script>
+        <script  src="js/evo-calendar.js"></script>
+        
+        <!--CSS Dependencies and theme-->
+            <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
+           <!-- Themes? Add them right after the main css-->
+            <link rel="stylesheet" type="text/css" href="css/evo-calendar.orange-coral.css"/>
+        
+        <script>
+           
+             $(document).ready(function() {
+            
+            //data for evocalendar
+            const bizzdata = <%- JSON.stringify(bizzevo) %>;
+    
+            //Color mapping
+            var colors = ['orange', 'red', 'yellow', 'green', 'blue']
+            let colormap = new Map();
+            var i = 0;
+            for (var event of bizzdata){
+                var type = event.type;
+                if (!colormap.has(type)) {
+                    colormap.set(type, colors[i % 4]);
+                    i++;
+                }
+            }
+            console.log(colormap);
+
+            //evocalendar
+            $('#calendar').evoCalendar({
+                calendarEvents: bizzdata,
+                theme:'Orange-Coral',
+                colors: colormap
+            });
+
+                });
+          </script>
+            
+    </head> 
+
+    <body>
+        <div id="calendar"></div>
+    </body>
+</html>
