@@ -1,19 +1,24 @@
-![Screenshot](https://res.cloudinary.com/turnup/image/upload/v1526512881/homepage-cards.png)
-
-# First Node Website Tutorial Starter Files
-
-These are the starter files to accompany the tutorial for building a simple Node.js website with Express and Pug.
-
-You can [access the tutorial here](https://freshman.tech/learn-node).
-
-[Live demo](https://freshman-node.herokuapp.com/)
+# First Node Calendar Project
+This project uses Evo-calendar and FullCalendar.io libraries to create a calendar of event. Note that we are using Bizzabo's public API.
 
 ## Instructions
-1. Clone repo
-2. Run `npm install`
+1.	Download Node.js 
+2.	Run the command below on the root of the folder to install the dependencies:
+    `npm install`
+3.	Run the command below the start the web application
+    `npm start`
+4.  In order to add API key, save the ".env_sample" file as ".env" and replace "YOUR_API_KEY_HERE" with your API key 
+5.	Run on the browser:  http://localhost:7000/evo
 
-## Getting Help
+## Files to refer to:
+1.	EJS: 	evo.ejs, full.ejs
+2.	JS:   	server.js 
 
-Need some help? Leave a comment on the tutorial — this repo is meant as a place to grab the starter files and isn't a support channel.
+## Resources Used:
+  Calendar Libraries:
+•	https://fullcalendar.io/
+•	https://github.com/edlynvillegas/evo-calendar
 
+  Node and Express
+•	https://freshman.tech/learn-node/
 
