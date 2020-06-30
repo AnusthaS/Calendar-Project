@@ -22,3 +22,4 @@ This project uses Evo-calendar and FullCalendar.io libraries to create a calenda
   Node and Express
 •	https://freshman.tech/learn-node/
 
+## Here is a Demo [https://my-calendar-of-events.herokuapp.com/evo]
