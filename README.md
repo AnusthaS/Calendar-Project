@@ -11,7 +11,7 @@ npm install
 npm start
 5.	Open on the browser:  http://localhost:7000/evo or http://localhost:7000/full 
 
-Here is a [Demo using Evo-calendar](https://my-calendar-of-events.herokuapp.com/evo) [and demo using FullCalendar](https://my-calendar-of-events.herokuapp.com/full)
+Here is a [Demo using Evo-calendar](https://my-calendar-of-events.herokuapp.com/evo) and [demo using FullCalendar](https://my-calendar-of-events.herokuapp.com/full)
 
 ## Files to refer to:
 1.	EJS: 	evo.ejs, full.ejs
