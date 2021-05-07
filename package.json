@@ -17,7 +17,7 @@
     "npm-fetch": "0.0.9",
     "pug": "^2.0.3",
     "request": "^2.88.2",
-    "underscore": "^1.10.2"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
